@@ -8,9 +8,12 @@
 
 1. Download & unzip the [Neo4j 2.1.6 movie database set](http://example-data.neo4j.org/files/cineasts_12k_movies_50k_actors_2.1.6.zip) from the [Neo4j Developer Pages](https://neo4j.com/developer/movie-database/), rename the directory to `graph.db` and movie it Neo4j's `data/databases` directory.
 1. Start Neo4j with `bin/neo4j start`
+1. Run the shell with `bin/neo4j-shell -path data/databases/graph.db/`
 1. Export the GraphML file with `export-graphml -o movie-database.graphml -t`
 
 ## Steps to import the GraphML file
 
 1. Start Neo4j with `bin/neo4j start`
-1. `import-graphml -i "movie-database.graphml" -t`
+1. Make sure that the `data/databases/graph.db` directory does not exists.
+1. Run the shell with `bin/neo4j-shell -path data/databases/graph.db`
+1. Import with `import-graphml -i "movie-database.graphml" -t`
