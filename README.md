@@ -13,6 +13,8 @@
 
 ## Steps to import the GraphML file
 
+This only works with 3.0.x - start in the [other releases](https://neo4j.com/download/other-releases/) page and do some URL hacking to get 3.0.6. Get the [shell-tools 3.0.1](http://dist.neo4j.org/jexp/shell/neo4j-shell-tools_3.0.1.zip) and unzip it to the `lib` directory.
+
 1. Start Neo4j with `bin/neo4j start`
 1. Make sure that the `data/databases/graph.db` directory does not exists.
 1. Run the shell with `bin/neo4j-shell -path data/databases/graph.db`
